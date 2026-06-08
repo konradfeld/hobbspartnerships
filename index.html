@@ -17,6 +17,17 @@
         }
     </style>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNP8K5XT8V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZNP8K5XT8V');
+</script>.
+
 <body class="bg-slate-50/50 text-slate-800 min-h-screen flex flex-col justify-between">
 
     <div class="bg-blue-900 text-white text-xs md:text-sm py-2 px-4 text-center font-medium tracking-wide">
@@ -32,7 +43,8 @@
                 We live in North Africa sharing the love of Christ with those who have little to no access to His Good News. In this current season, we are facing a significant shortfall in our funding and are inviting partners to help us fill these specific "buckets" so we can remain focused on the work before us and live in a season of thriving instead of surviving.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://partnergiving.net/donate/1034610-001" target="_blank" rel="noopener noreferrer" 
+                <a href="https://partnergiving.net/donate/1034610-001" target="_blank" rel="noopener noreferrer"
+                    onclick="gtag('event', 'click_general_gift', { 'event_category': 'Engagement' });" 
                    class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-base font-bold rounded-xl shadow-lg shadow-blue-600/20 transition-all duration-200 transform hover:-translate-y-0.5 text-center">
                     Give a General Gift
                 </a>
@@ -157,7 +169,8 @@
                                 <span class="text-slate-900 font-extrabold text-base">${formattedRaised}</span> raised of <span class="text-slate-700 font-semibold">${formattedGoal}${bucket.suffix}</span>
                             </div>
 
-                            <a href="${bucket.link}" target="_blank" rel="noopener noreferrer" 
+                            <a href="${bucket.link}" target="_blank" rel="noopener noreferrer"
+                               onclick="gtag"('event', 'click_funding_bucket', { 'bucket_name': '${bucket.title}' });" 
                                class="block text-center w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm rounded-xl transition duration-150 transform active:scale-[0.99]">
                                 Give to this Need
                             </a>
